@@ -7,6 +7,7 @@ import {Link} from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/action/Cart.action';
 import { Helmet } from 'react-helmet';
+// import { dummyapi } from './dummyapi';
 
 const Product = () => {
 
@@ -14,6 +15,8 @@ const Product = () => {
     const [loading, setLoading] = useState(false);
 
     const {id} = useParams();
+    
+//    const productId = Number(id);
 
 
     const dispatch = useDispatch();
@@ -34,6 +37,15 @@ const Product = () => {
        }
 
         getProducts();
+
+    // if using your own API Not url then you have to filterr the array in which you have your own response
+
+    //   const response = dummyapi.filter(item => item.id === productId)[0]
+
+    //   setProduct(response);
+
+    //   console.log(product);
+       
     }, [])
 
     

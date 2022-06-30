@@ -1,5 +1,6 @@
-
 # E-mart Ecommerce Store Using React-Redux
+
+![Logo](./public/images/emart.png)
 
 Hosted App Link: <https://e-mart-react.web.app>
 
